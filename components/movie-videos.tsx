@@ -1,5 +1,6 @@
-import { API_URL } from "../app/(home)/page"
 import style from "../styles/movie-vidoes.module.css"
+
+const API_URL = "https://nomad-movies.nomadcoders.workers.dev/movies"
 
 async function getVideos(id:string) {
   const response = await fetch(`${API_URL}/${id}/videos`)
